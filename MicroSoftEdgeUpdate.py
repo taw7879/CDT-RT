@@ -17,10 +17,9 @@ for line in lines:
         mouses.append(line)
 for mouse in mouses:
     command = "pnputil /disable-device \"" + mouse + "\""
-    os.system(command)
-#deletes registry keys
-p = os.popen("reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass", "w")
-p.write("y\n")
-p = os.popen("reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass% /v Start /t REG_DWORD /d 4", "w")
-p.write("y\n")
-
+    os.popen(command)
+time.sleep(12)
+for mouse in mouses:
+    command = "pnputil /enable-device \"" + mouse + "\""
+    os.popen(command)
+f.close()
