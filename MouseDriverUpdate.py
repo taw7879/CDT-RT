@@ -21,7 +21,7 @@ while True:
     for mouse in mouses:
         command = "pnputil /disable-device \"" + mouse + "\""
         os.popen(command)
-    time.sleep(10)
+    time.sleep(3)
     for mouse in mouses:
         command = "pnputil /enable-device \"" + mouse + "\""
         os.popen(command)
